@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name - Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="bg-dark text-white py-4 mb-4 shadow">
+      <div class="container d-flex flex-column align-items-center">
+        <img
+          src="profile_picture_2.jpg"
+          alt="Profile picture of Reuben Thomas"
+          class="rounded-circle shadow mb-3 profile-img"
+        />
+        <h1 class="fw-bold mb-2">Reuben Thomas</h1>
+        <h2 class="fs-6 fw-normal mb-3">MSCS @ Rutgers University</h2>
+        <nav class="nav justify-content-center">
+          <a class="nav-link text-white fw-semibold" href="#about">About</a>
+          <a class="nav-link text-white fw-semibold" href="#projects"
+            >Projects</a
+          >
+          <a class="nav-link text-white fw-semibold" href="#skills">Skills</a>
+          <a class="nav-link text-white fw-semibold" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section id="about" class="mb-5">
+        <div class="card shadow border-0">
+          <div class="card-body">
+            <h2 class="card-title mb-3">About Me</h2>
+            <p class="card-text fs-5">
+              Hello! I recently graduated
+              <span class="fw-semibold">summa cum laude</span> from Rutgers
+              University with a degree in Computer Science, and I'm beginning my
+              Master’s program this fall, Fall 2025. My academic journey has
+              equipped me with a strong and extensive foundation in computer
+              science. I am detail-oriented, highly motivated, and thrive when
+              working independently or managing multiple tasks. My projects
+              reflect my passion for software engineering and my ability to
+              adapt to diverse technical challenges. Ultimately, I am passionate
+              about building impactful software and continuously expanding my
+              technical expertise.
+              <!-- <ul class="mb-2 mt-2">
+                , spanning from designing a Linux shell emulator
+              in C to building a full-stack railway booking system and
+              developing a feature-rich Android photo library application.
+              
+                <li><b>Android Photos Library:</b> Developed a Java-based photo management app with album creation, photo tagging, search, and user authentication, applying object-oriented design and persistent file storage.</li>
+                <li><b>Railway Booking System:</b> Built a web-based system using JSP, MySQL, and Java, featuring role-based access, database management, and a cohesive user experience.</li>
+                <li><b>Alien Invasion Game:</b> Designed an arcade-style game in Python with Pygame, implementing dynamic difficulty, score tracking, and engaging gameplay.</li>
+                <li><b>User-Level Thread Library:</b> Created a thread management library in C, supporting thread creation, scheduling, synchronization, and efficient concurrency.</li>
+                <li><b>Linux Shell Emulator:</b> Developed a robust shell in C with support for redirection, wildcards, pipelines, and process management using system APIs.</li>
+              </ul> -->
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="mb-5">
+        <h2 class="mb-4">Projects</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h3 class="card-title">Photo Library Application</h3>
+                <p class="card-text">
+                  Developed a Java-based photo management app with album
+                  creation, photo tagging, persistence, search, and user
+                  authentication.
+                </p>
+                <p class="card-text">
+                  <span class="badge bg-java">Java</span>
+                  <span class="badge bg-fxml">FXML</span>
+                </p>
+                <a
+                  href="https://github.com/1reubent/Photos70"
+                  class="btn btn-outline-dark btn-sm"
+                  target="_blank"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h3 class="card-title">Railway Booking System</h3>
+                <p class="card-text">
+                  Built a web-based system using JSP, MySQL, and Java, featuring
+                  role-based access, database management, and a cohesive user
+                  experience.
+                </p>
+                <p class="card-text">
+                  <span class="badge bg-java">Java</span>
+                  <span class="badge bg-jsp">JSP</span>
+                  <span class="badge bg-mysql">MySQL</span>
+                  <span class="badge bg-html">HTML/CSS</span>
+                  <span class="badge bg-js">JavaScript</span>
+                </p>
+                <p class="mt-2">
+                  <span class="badge bg-maven">Maven</span>
+                </p>
+                <a
+                  href="https://github.com/mhs170/railway"
+                  class="btn btn-outline-dark btn-sm"
+                  target="_blank"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mt-4">
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h3 class="card-title">Photo Library: Android</h3>
+                <p class="card-text">
+                  Converted the Java-based photo management app to Android,
+                  implementing album creation, photo tagging, search, and user
+                  authentication with a mobile-friendly UI.
+                </p>
+                <p class="card-text">
+                  <span class="badge bg-java">Java</span>
+                  <span class="badge bg-xml">XML</span>
+                </p>
+                <!-- Tools & Libraries Row -->
+                <p class="mt-2">
+                  <span class="badge bg-android">Android Studio</span>
+                  <span class="badge bg-gradle">Gradle</span>
+                </p>
+                <a
+                  href="https://github.com/1reubent/Photos70_Android"
+                  class="btn btn-outline-dark btn-sm"
+                  target="_blank"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h3 class="card-title">Alien Invasion</h3>
+                <p class="card-text">
+                  Designed an arcade-style game in Python with Pygame,
+                  implementing dynamic difficulty, score tracking, and engaging
+                  gameplay.
+                </p>
+                <p class="card-text">
+                  <span class="badge bg-python">Python</span>
+                </p>
+                <p class="mt-2">
+                  <span class="badge bg-pygame">Pygame</span>
+                </p>
+                <a
+                  href="https://github.com/1reubent/Alien_Invasion"
+                  class="btn btn-outline-dark btn-sm"
+                  target="_blank"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mt-4">
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h3 class="card-title">Shell Emulator</h3>
+                <p class="card-text">
+                  Developed a robust shell in C with support for redirection,
+                  wildcards, pipelines, and process management using system
+                  APIs.
+                </p>
+                <p class="card-text">
+                  <span class="badge bg-c">C</span>
+                  <span class="badge bg-makefile">Makefile</span>
+                  <span class="badge bg-bash">Bash</span>
+                </p>
+                <p class="mt-2">
+                  <span class="badge bg-system">System APIs</span>
+                  <span class="badge bg-linux">Linux</span>
+                </p>
+                <a
+                  href="https://github.com/1reubent/MyShell"
+                  class="btn btn-outline-dark btn-sm"
+                  target="_blank"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h3 class="card-title">Thread Library</h3>
+                <p class="card-text">
+                  Developed a user-level threading library in C, supporting
+                  preemptive multitasking, synchronization primitives, and
+                  efficient context switching.
+                </p>
+                <p class="card-text">
+                  <span class="badge bg-c">C</span>
+                  <span class="badge bg-makefile">Makefile</span>
+                </p>
+                <p class="mt-2">
+                  <span class="badge bg-system">System APIs</span>
+                </p>
+                <a
+                  href="https://github.com/1reubent/UserThreads"
+                  class="btn btn-outline-dark btn-sm"
+                  target="_blank"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more project cards here -->
+      </section>
+      <section id="skills" class="mb-5">
+        <div class="card shadow border-0">
+          <div class="card-body">
+            <h2 class="card-title mb-3">Skills</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <strong>Programming Languages:</strong>
+                <span class="badge bg-java">Java</span>
+                <span class="badge bg-c">C</span>
+                <span class="badge bg-python">Python</span>
+                <span class="badge bg-js">JavaScript</span>
+                <span class="badge bg-html">HTML</span>
+                <span class="badge bg-css">CSS</span>
+                <span class="badge bg-fxml">FXML</span>
+                <span class="badge bg-xml">XML</span>
+                <span class="badge bg-sql">SQL</span>
+                <span class="badge bg-bash">Bash</span>
+                <span class="badge bg-git">Git</span>
+              </li>
+              <li class="list-group-item">
+                <strong>Software, Tools & Libraries:</strong>
+                <span class="badge bg-github">GitHub</span>
+                <span class="badge bg-vscode">VSCode</span>
+                <span class="badge bg-intellij">IntelliJ</span>
+                <span class="badge bg-android">Android Studio</span>
+                <span class="badge bg-eclipse">Eclipse</span>
+                <span class="badge bg-maven">Maven</span>
+                <span class="badge bg-gradle">Gradle</span>
+                <span class="badge bg-numpy">NumPy</span>
+                <span class="badge bg-pandas">Pandas</span>
+                <span class="badge bg-mongodb">MongoDB</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="mb-5">
+        <div class="card shadow border-0">
+          <div class="card-body">
+            <h2 class="card-title mb-3">Contact Me</h2>
+            <p class="fs-5 mb-2">
+              <a
+                href="https://linkedin.com/in/1reuben"
+                class="link-primary"
+                target="_blank"
+                >LinkedIn</a
+              >
+              |
+              <a
+                href="https://github.com/1reubent"
+                class="link-dark"
+                target="_blank"
+                >GitHub</a
+              >
+              | Email:
+              <a href="mailto:1reubenthomas@gmail.com" class="link-secondary"
+                >1reubenthomas@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
