@@ -47,6 +47,8 @@
   background-color: #3572a5;
   color: #fff;
 }
+.badge.bg-beautifulsoup { background-color: #f15b8a; color: #fff; }
+.badge.bg-requests { background-color: #6aa0f8; color: #fff; }
 .badge.bg-c {
   background-color: #555555;
   color: #fff;
