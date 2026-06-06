@@ -22,7 +22,7 @@
     <header class="bg-dark text-white py-4 mb-4 shadow">
       <div class="container d-flex flex-column align-items-center">
         <img
-          src="profile_picture_3.jpg"
+          src="profile_picture_3.jpeg"
           alt="Profile picture of Reuben Thomas"
           class="rounded-circle shadow mb-3 profile-img"
         />
@@ -53,7 +53,7 @@
               strong intuition for software and database design across a variety
               of use cases. I'm detail-oriented, motivated, and thrive when
               taking ownership of projects. Ultimately, I love solving real
-              problems and challenging myself to learn new things everyday.
+              problems and contributing to high-impact teams.
 
               <!-- <ul class="mb-2 mt-2">
                 , spanning from designing a Linux shell emulator
@@ -73,6 +73,37 @@
       <section id="projects" class="mb-5">
         <h2 class="mb-4">Projects</h2>
         <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h3 class="card-title">Housing Price Prediction</h3>
+                <p class="card-text">
+                  Analyzed the Ames, Iowa Housing dataset (79 features, 2,900+
+                  records) to predict residential sale prices using regression
+                  models. Engineered 15+ features capturing domain knowledge and
+                  compared Linear, Ridge, and Lasso regression; Ridge + feature
+                  engineering achieved best performance (R² = 0.937, RMSE =
+                  0.108).
+                </p>
+                <p class="card-text">
+                  <span class="badge bg-sklearn">SciKit-Learn</span>
+                  <span class="badge bg-matplotlib">Matplotlib</span>
+                  <span class="badge bg-seaborn">Seaborn</span>
+                </p>
+                <!-- <p class="mt-2">
+                  <span class="badge bg-pandas">Pandas</span>
+                  <span class="badge bg-numpy">NumPy</span>
+                </p> -->
+                <!-- <a
+                  href="#"
+                  class="btn btn-outline-dark btn-sm"
+                  target="_blank"
+                  >View on GitHub</a
+                > -->
+              </div>
+            </div>
+          </div>
+
           <div class="col-md-6">
             <div class="card h-100 shadow-sm border-0">
               <div class="card-body">
@@ -241,34 +272,67 @@
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
                 <strong>Programming Languages:</strong>
-                <br />
-                <span class="badge bg-java">Java</span>
-                <span class="badge bg-c">C</span>
-                <span class="badge bg-python">Python</span>
-                <span class="badge bg-js">JavaScript</span>
-                <span class="badge bg-html">HTML</span>
-                <span class="badge bg-css">CSS</span>
-                <span class="badge bg-fxml">FXML</span>
-                <span class="badge bg-xml">XML</span>
-                <span class="badge bg-sql">SQL</span>
-                <span class="badge bg-bash">Bash</span>
-                <span class="badge bg-git">Git</span>
+                <div class="skill-subsection">
+                  <span class="skill-subsection-title">Proficient:</span>
+                  <span class="badge bg-python">Python</span>
+                  <span class="badge bg-html">HTML/CSS</span>
+                  <span class="badge bg-sql">SQL</span>
+                  <div class="skill-subsection">
+                    <span class="skill-subsection-title"
+                      >Data Science Libraries:</span
+                    >
+                    <span class="badge bg-sklearn">SciKit-Learn</span>
+                    <span class="badge bg-matplotlib">Matplotlib</span>
+                    <span class="badge bg-seaborn">Seaborn</span>
+                  </div>
+                </div>
+                <div class="skill-subsection">
+                  <span class="skill-subsection-title">Experience:</span>
+                  <span class="badge bg-java">Java</span>
+                  <span class="badge bg-js">JavaScript</span>
+                  <span class="badge bg-jinja">Jinja</span>
+                  <span class="badge bg-c">C</span>
+                  <!-- <span class="badge bg-bash">Bash</span> -->
+                </div>
               </li>
               <li class="list-group-item">
-                <strong>Software, Tools & Libraries:</strong>
+                <strong>Databases:</strong>
+                <div class="skill-subsection">
+                  <span class="skill-subsection-title">Proficient:</span>
+                  <span class="badge bg-mysql">MySQL</span>
+                  <span class="badge bg-sqlite">SQLite</span>
+                </div>
+                <div class="skill-subsection">
+                  <span class="skill-subsection-title">Experience:</span>
+                  <span class="badge bg-mongodb">MongoDB</span>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <strong>Additional Experience:</strong>
+                <div class="skill-subsection">
+                  <span class="skill-subsection-title"
+                    >Cloud & Tools Experience:</span
+                  >
+                  <span class="badge bg-aws">Amazon S3</span>
+                  <span class="badge bg-git">Git</span>
+                  <span class="badge bg-github">GitHub</span>
+                  <span class="badge bg-postman">Postman</span>
+                </div>
+                <div class="skill-subsection">
+                  <span class="skill-subsection-title"
+                    >Build & Infrastructure Experience:</span
+                  >
+                  <span class="badge bg-ec2">Amazon EC2</span>
+                  <span class="badge bg-system">System APIs</span>
+                  <span class="badge bg-linux">Linux</span>
+                  <span class="badge bg-makefile">Makefile</span>
+                </div>
+                <div class="skill-subsection">
+                  <span class="skill-subsection-title">Libraries:</span>
+                  <span class="badge bg-flask">Flask</span>
+                  <span class="badge bg-fastapi">FastAPI</span>
+                </div>
                 <br />
-                <span class="badge bg-github">GitHub</span>
-                <span class="badge bg-vscode">VSCode</span>
-                <span class="badge bg-intellij">IntelliJ</span>
-                <span class="badge bg-android">Android Studio</span>
-                <span class="badge bg-eclipse">Eclipse</span>
-                <span class="badge bg-maven">Maven</span>
-                <span class="badge bg-gradle">Gradle</span>
-                <span class="badge bg-numpy">NumPy</span>
-                <span class="badge bg-pandas">Pandas</span>
-                <span class="badge bg-beautifulsoup">BeautifulSoup4</span>
-                <span class="badge bg-requests">Requests</span>
-                <span class="badge bg-mongodb">MongoDB</span>
               </li>
             </ul>
           </div>

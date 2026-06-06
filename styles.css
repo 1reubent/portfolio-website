@@ -47,8 +47,14 @@
   background-color: #3572a5;
   color: #fff;
 }
-.badge.bg-beautifulsoup { background-color: #f15b8a; color: #fff; }
-.badge.bg-requests { background-color: #6aa0f8; color: #fff; }
+.badge.bg-beautifulsoup {
+  background-color: #f15b8a;
+  color: #fff;
+}
+.badge.bg-requests {
+  background-color: #6aa0f8;
+  color: #fff;
+}
 .badge.bg-c {
   background-color: #555555;
   color: #fff;
@@ -112,6 +118,57 @@
 .badge.bg-linux {
   background-color: #333;
   color: #fff;
+}
+.badge.bg-sklearn {
+  background-color: #f7931e;
+  color: #fff;
+}
+.badge.bg-matplotlib {
+  background-color: #1f77b4;
+  color: #fff;
+}
+.badge.bg-seaborn {
+  background-color: #007a8f;
+  color: #fff;
+}
+.badge.bg-jinja {
+  background-color: #b41717;
+  color: #fff;
+}
+.badge.bg-sqlite {
+  background-color: #003b57;
+  color: #fff;
+}
+.badge.bg-aws {
+  background-color: #ff9900;
+  color: #222;
+}
+.badge.bg-postman {
+  background-color: #ff6c37;
+  color: #fff;
+}
+.badge.bg-flask {
+  background-color: #000000;
+  color: #fff;
+}
+.badge.bg-fastapi {
+  background-color: #009688;
+  color: #fff;
+}
+.badge.bg-ec2 {
+  background-color: #ff9900;
+  color: #222;
+}
+.skill-subsection {
+  margin-left: 1rem;
+  margin-top: 0.75rem;
+}
+.skill-subsection-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #495057;
 }
 body {
   font-family: "Segoe UI", Arial, sans-serif;
