@@ -159,6 +159,10 @@
   background-color: #ff9900;
   color: #222;
 }
+.badge.bg-claude {
+  background-color: #d97757;
+  color: #fff;
+}
 .skill-subsection {
   margin-left: 1rem;
   margin-top: 0.75rem;
