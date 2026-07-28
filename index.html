@@ -3,377 +3,389 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reuben Thomas - Portfolio</title>
+    <meta
+      name="description"
+      content="Reuben Thomas — Data Analytics & AI graduate student, software engineer and builder."
+    />
+    <title>Reuben Thomas — Portfolio</title>
 
-    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@700&family=Fira+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="bg-dark text-white py-4 mb-4 shadow">
-      <div class="container d-flex flex-column align-items-center">
-        <img
-          src="profile_picture_3.jpeg"
-          alt="Profile picture of Reuben Thomas"
-          class="rounded-circle shadow mb-3 profile-img"
-        />
-        <h1 class="fw-bold mb-2">Reuben Thomas</h1>
-        <h2 class="fs-6 fw-normal mb-3">
-          Pursuing MBS: Data Analytics & AI @ Rutgers University NB
-        </h2>
-        <nav class="nav justify-content-center">
-          <a class="nav-link text-white fw-semibold" href="#about">About</a>
-          <a class="nav-link text-white fw-semibold" href="#projects"
-            >Projects</a
-          >
-          <a class="nav-link text-white fw-semibold" href="#skills">Skills</a>
-          <a class="nav-link text-white fw-semibold" href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-    <main class="container">
-      <section id="about" class="mb-5">
-        <div class="card shadow border-0">
-          <div class="card-body">
-            <h2 class="card-title mb-3">About Me</h2>
-            <p class="card-text fs-5">
-              Hey! I'm a Spring 2025 Rutgers University graduate (summa cum
-              laude) in Computer Science, beginning my Master of Business and
-              Science degree in Fall 2025 with a concentration in Data Analytics
-              & AI. Through rigorous coursework and intricate projects, I've
-              cultivated a strong intuition for software and database design
-              across a variety of use cases. I'm detail-oriented, motivated, and
-              thrive when taking ownership of projects. Ultimately, I love
-              solving real problems and contributing to high-impact teams.
+    <div class="bg-glow" aria-hidden="true">
+      <span class="glow glow-1"></span>
+      <span class="glow glow-2"></span>
+      <span class="glow glow-3"></span>
+    </div>
 
-              <!-- <ul class="mb-2 mt-2">
-                , spanning from designing a Linux shell emulator
-              in C to building a full-stack railway booking system and
-              developing a feature-rich Android photo library application.
-              
-                <li><b>Android Photos Library:</b> Developed a Java-based photo management app with album creation, photo tagging, search, and user authentication, applying object-oriented design and persistent file storage.</li>
-                <li><b>Railway Booking System:</b> Built a web-based system using JSP, MySQL, and Java, featuring role-based access, database management, and a cohesive user experience.</li>
-                <li><b>Alien Invasion Game:</b> Designed an arcade-style game in Python with Pygame, implementing dynamic difficulty, score tracking, and engaging gameplay.</li>
-                <li><b>User-Level Thread Library:</b> Created a thread management library in C, supporting thread creation, scheduling, synchronization, and efficient concurrency.</li>
-                <li><b>Linux Shell Emulator:</b> Developed a robust shell in C with support for redirection, wildcards, pipelines, and process management using system APIs.</li>
-              </ul> -->
+    <header class="site-header">
+      <nav class="navbar" id="navbar">
+        <a href="#top" class="brand">RT<span class="brand-dot">.</span></a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-inner reveal">
+          <img
+            src="profile_picture_3.jpeg"
+            alt="Profile picture of Reuben Thomas"
+            class="hero-avatar"
+          />
+          <p class="eyebrow">Hey, I'm</p>
+          <h1 class="hero-name">Reuben Thomas</h1>
+          <p class="hero-tagline">
+            Pursuing MBS: Data Analytics &amp; AI
+            <span class="hero-tagline-org">@ Rutgers University&nbsp;NB</span>
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to About section">
+          <span></span>
+        </a>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-inner reveal">
+          <p class="section-kicker">01 — About</p>
+          <h2 class="section-title">About Me</h2>
+          <div class="panel">
+            <p class="about-text">
+              I'm a Spring 2025 Rutgers University graduate
+              <em>(summa cum laude)</em> in Computer Science, now beginning my
+              Master of Business and Science degree in Fall 2025 with a
+              concentration in Data Analytics &amp; AI. Through rigorous
+              coursework and intricate projects, I've cultivated a strong
+              intuition for software and database design across a variety of
+              use cases. I'm detail-oriented, motivated, and thrive when
+              taking ownership of projects. Ultimately, I love solving real
+              problems and contributing to high-impact teams.
             </p>
           </div>
         </div>
       </section>
-      <section id="projects" class="mb-5">
-        <h2 class="mb-4">Projects</h2>
-        <div class="row g-4">
-          <div class="col-md-6">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h3 class="card-title">Housing Price Prediction</h3>
-                <p class="card-text">
+
+      <section id="projects" class="section">
+        <div class="section-inner reveal">
+          <p class="section-kicker">02 — Projects</p>
+          <h2 class="section-title">Projects</h2>
+
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-card-body">
+                <h3 class="project-title">Housing Price Prediction</h3>
+                <p class="project-desc">
                   Analyzed the Ames, Iowa Housing dataset (79 features, 2,900+
                   records) to predict residential sale prices using regression
-                  models. Engineered 15+ features capturing domain knowledge and
-                  compared Linear, Ridge, and Lasso regression; Ridge + feature
-                  engineering achieved best performance (R² = 0.937, RMSE =
-                  0.108).
+                  models. Engineered 15+ features capturing domain knowledge
+                  and compared Linear, Ridge, and Lasso regression; Ridge +
+                  feature engineering achieved best performance (R² = 0.937,
+                  RMSE = 0.108).
                 </p>
-                <p class="card-text">
+                <div class="badge-row">
                   <span class="badge bg-sklearn">SciKit-Learn</span>
                   <span class="badge bg-matplotlib">Matplotlib</span>
                   <span class="badge bg-seaborn">Seaborn</span>
-                </p>
-                <p class="card-text">
                   <span class="badge bg-claude">Claude AI</span>
-                </p>
-
-                <!-- <p class="mt-2">
-                  <span class="badge bg-pandas">Pandas</span>
-                  <span class="badge bg-numpy">NumPy</span>
-                </p> -->
-                <!-- <a
-                  href="#"
-                  class="btn btn-outline-dark btn-sm"
-                  target="_blank"
-                  >View on GitHub</a
-                > -->
+                </div>
               </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="col-md-6">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h3 class="card-title">Photo Library Application</h3>
-                <p class="card-text">
+            <article class="project-card reveal">
+              <div class="project-card-body">
+                <h3 class="project-title">Photo Library Application</h3>
+                <p class="project-desc">
                   Developed a Java-based photo management app with album
                   creation, photo tagging, persistence, search, and user
                   authentication.
                 </p>
-                <p class="card-text">
+                <div class="badge-row">
                   <span class="badge bg-java">Java</span>
                   <span class="badge bg-fxml">FXML</span>
-                </p>
+                </div>
                 <a
                   href="https://github.com/1reubent/Photos70"
-                  class="btn btn-outline-dark btn-sm"
+                  class="project-link"
                   target="_blank"
-                  >View on GitHub</a
+                  rel="noopener"
+                  >View on GitHub <span aria-hidden="true">→</span></a
                 >
               </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="col-md-6">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h3 class="card-title">Railway Booking System</h3>
-                <p class="card-text">
-                  Built a web-based railway booking system, featuring role-based
-                  access, database management, and a cohesive user experience.
+            <article class="project-card reveal">
+              <div class="project-card-body">
+                <h3 class="project-title">Railway Booking System</h3>
+                <p class="project-desc">
+                  Built a web-based railway booking system, featuring
+                  role-based access, database management, and a cohesive user
+                  experience.
                 </p>
-                <p class="card-text">
+                <div class="badge-row">
                   <span class="badge bg-java">Java</span>
                   <span class="badge bg-jsp">JSP</span>
                   <span class="badge bg-mysql">MySQL</span>
                   <span class="badge bg-html">HTML/CSS</span>
                   <span class="badge bg-js">JavaScript</span>
-                </p>
-                <p class="mt-2">
                   <span class="badge bg-maven">Maven</span>
-                </p>
+                </div>
                 <a
                   href="https://github.com/mhs170/railway"
-                  class="btn btn-outline-dark btn-sm"
+                  class="project-link"
                   target="_blank"
-                  >View on GitHub</a
+                  rel="noopener"
+                  >View on GitHub <span aria-hidden="true">→</span></a
                 >
               </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="col-md-6">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h3 class="card-title">Photo Library: Android</h3>
-                <p class="card-text">
+            <article class="project-card reveal">
+              <div class="project-card-body">
+                <h3 class="project-title">Photo Library: Android</h3>
+                <p class="project-desc">
                   Converted the Java-based photo management app to Android,
                   implementing all the same features as before with a
                   mobile-friendly UI.
                 </p>
-                <p class="card-text">
+                <div class="badge-row">
                   <span class="badge bg-java">Java</span>
                   <span class="badge bg-xml">XML</span>
-                </p>
-                <!-- Tools & Libraries Row -->
-                <p class="mt-2">
                   <span class="badge bg-android">Android Studio</span>
                   <span class="badge bg-gradle">Gradle</span>
-                </p>
+                </div>
                 <a
                   href="https://github.com/1reubent/Photos70_Android"
-                  class="btn btn-outline-dark btn-sm"
+                  class="project-link"
                   target="_blank"
-                  >View on GitHub</a
+                  rel="noopener"
+                  >View on GitHub <span aria-hidden="true">→</span></a
                 >
               </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="col-md-6">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h3 class="card-title">Alien Invasion</h3>
-                <p class="card-text">
+            <article class="project-card reveal">
+              <div class="project-card-body">
+                <h3 class="project-title">Alien Invasion</h3>
+                <p class="project-desc">
                   Designed an arcade-style game inspired by Space Invaders,
-                  implementing dynamic difficulty, score tracking, and engaging
-                  gameplay.
+                  implementing dynamic difficulty, score tracking, and
+                  engaging gameplay.
                 </p>
-                <p class="card-text">
+                <div class="badge-row">
                   <span class="badge bg-python">Python</span>
-                </p>
-                <p class="mt-2">
                   <span class="badge bg-pygame">Pygame</span>
-                </p>
+                </div>
                 <a
                   href="https://github.com/1reubent/Alien_Invasion"
-                  class="btn btn-outline-dark btn-sm"
+                  class="project-link"
                   target="_blank"
-                  >View on GitHub</a
+                  rel="noopener"
+                  >View on GitHub <span aria-hidden="true">→</span></a
                 >
               </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="col-md-6">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h3 class="card-title">Shell Emulator</h3>
-                <p class="card-text">
+            <article class="project-card reveal">
+              <div class="project-card-body">
+                <h3 class="project-title">Shell Emulator</h3>
+                <p class="project-desc">
                   Developed a robust shell in C with support for redirection,
                   wildcards, pipelines, and process management using system
                   APIs.
                 </p>
-                <p class="card-text">
+                <div class="badge-row">
                   <span class="badge bg-c">C</span>
                   <span class="badge bg-makefile">Makefile</span>
                   <span class="badge bg-bash">Bash</span>
-                </p>
-                <p class="mt-2">
                   <span class="badge bg-system">System APIs</span>
                   <span class="badge bg-linux">Linux</span>
-                </p>
+                </div>
                 <a
                   href="https://github.com/1reubent/MyShell"
-                  class="btn btn-outline-dark btn-sm"
+                  class="project-link"
                   target="_blank"
-                  >View on GitHub</a
+                  rel="noopener"
+                  >View on GitHub <span aria-hidden="true">→</span></a
                 >
               </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="col-md-6">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h3 class="card-title">Thread Library</h3>
-                <p class="card-text">
+            <article class="project-card reveal">
+              <div class="project-card-body">
+                <h3 class="project-title">Thread Library</h3>
+                <p class="project-desc">
                   Developed a user-level threading library in C, supporting
                   preemptive multitasking, synchronization primitives, and
                   efficient context switching.
                 </p>
-                <p class="card-text">
+                <div class="badge-row">
                   <span class="badge bg-c">C</span>
                   <span class="badge bg-makefile">Makefile</span>
-                </p>
-                <p class="mt-2">
                   <span class="badge bg-system">System APIs</span>
-                </p>
+                </div>
                 <a
                   href="https://github.com/1reubent/UserThreads"
-                  class="btn btn-outline-dark btn-sm"
+                  class="project-link"
                   target="_blank"
-                  >View on GitHub</a
+                  rel="noopener"
+                  >View on GitHub <span aria-hidden="true">→</span></a
                 >
               </div>
-            </div>
+            </article>
           </div>
         </div>
-        <div class="row g-4 mt-4"></div>
-        <!-- Add more project cards here -->
       </section>
-      <section id="skills" class="mb-5">
-        <div class="card shadow border-0">
-          <div class="card-body">
-            <h2 class="card-title mb-3">Skills</h2>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <strong>Programming Languages:</strong>
-                <div class="skill-subsection">
-                  <span class="skill-subsection-title">Proficient:</span>
+
+      <section id="skills" class="section">
+        <div class="section-inner reveal">
+          <p class="section-kicker">03 — Skills</p>
+          <h2 class="section-title">Skills</h2>
+          <div class="panel skills-panel">
+            <div class="skill-group">
+              <h3 class="skill-group-title">Programming Languages</h3>
+              <div class="skill-subsection">
+                <span class="skill-subsection-title">Proficient</span>
+                <div class="badge-row">
                   <span class="badge bg-python">Python</span>
                   <span class="badge bg-html">HTML/CSS</span>
                   <span class="badge bg-sql">SQL</span>
-                  <!-- <div class="skill-subsection">
-                    <span class="skill-subsection-title"
-                      >Data Science Libraries:</span
-                    >
-                    <span class="badge bg-sklearn">SciKit-Learn</span>
-                    <span class="badge bg-matplotlib">Matplotlib</span>
-                    <span class="badge bg-seaborn">Seaborn</span>
-                  </div> -->
                 </div>
-                <div class="skill-subsection">
-                  <span class="skill-subsection-title">Experience:</span>
+              </div>
+              <div class="skill-subsection">
+                <span class="skill-subsection-title">Experience</span>
+                <div class="badge-row">
                   <span class="badge bg-java">Java</span>
                   <span class="badge bg-c">C</span>
                   <span class="badge bg-js">JavaScript</span>
-                  <!-- <span class="badge bg-jinja">Jinja</span> -->
                   <span class="badge bg-bash">Bash</span>
                 </div>
-              </li>
-              <li class="list-group-item">
-                <strong>Databases:</strong>
-                <div class="skill-subsection">
-                  <span class="skill-subsection-title">Proficient:</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group-title">Databases</h3>
+              <div class="skill-subsection">
+                <span class="skill-subsection-title">Proficient</span>
+                <div class="badge-row">
                   <span class="badge bg-mysql">MySQL</span>
                   <span class="badge bg-sqlite">SQLite</span>
                 </div>
-                <div class="skill-subsection">
-                  <span class="skill-subsection-title">Experience:</span>
+              </div>
+              <div class="skill-subsection">
+                <span class="skill-subsection-title">Experience</span>
+                <div class="badge-row">
                   <span class="badge bg-mongodb">MongoDB</span>
                 </div>
-              </li>
-              <li class="list-group-item">
-                <strong>Additional Experience:</strong>
-                <div class="skill-subsection">
-                  <span class="skill-subsection-title"
-                    >Cloud & Tools Experience:</span
-                  >
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group-title">Additional Experience</h3>
+              <div class="skill-subsection">
+                <span class="skill-subsection-title">Cloud &amp; Tools</span>
+                <div class="badge-row">
                   <span class="badge bg-aws">Amazon S3</span>
                   <span class="badge bg-git">Git</span>
                   <span class="badge bg-github">GitHub</span>
                   <span class="badge bg-postman">Postman</span>
                 </div>
-                <div class="skill-subsection">
-                  <span class="skill-subsection-title"
-                    >Build & Infrastructure Experience:</span
-                  >
+              </div>
+              <div class="skill-subsection">
+                <span class="skill-subsection-title"
+                  >Build &amp; Infrastructure</span
+                >
+                <div class="badge-row">
                   <span class="badge bg-ec2">Amazon EC2</span>
                   <span class="badge bg-system">System APIs</span>
                   <span class="badge bg-linux">Linux</span>
                   <span class="badge bg-makefile">Makefile</span>
                 </div>
-                <div class="skill-subsection">
-                  <span class="skill-subsection-title">Other Libraries:</span>
+              </div>
+              <div class="skill-subsection">
+                <span class="skill-subsection-title">Other Libraries</span>
+                <div class="badge-row">
                   <span class="badge bg-sklearn">SciKit-Learn</span>
                   <span class="badge bg-matplotlib">Matplotlib</span>
                   <span class="badge bg-seaborn">Seaborn</span>
                   <span class="badge bg-flask">Flask</span>
                   <span class="badge bg-fastapi">FastAPI</span>
                 </div>
-                <br />
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section id="contact" class="mb-5">
-        <div class="card shadow border-0">
-          <div class="card-body">
-            <h2 class="card-title mb-3">Contact Me</h2>
-            <p class="fs-5 mb-2">
+
+      <section id="contact" class="section">
+        <div class="section-inner reveal">
+          <p class="section-kicker">04 — Contact</p>
+          <h2 class="section-title">Let's Connect</h2>
+          <div class="panel contact-panel">
+            <p class="contact-lead">
+              Open to opportunities in data analytics, AI, and software
+              engineering — feel free to reach out.
+            </p>
+            <div class="contact-links">
               <a
                 href="https://linkedin.com/in/1reuben"
-                class="link-primary"
+                class="contact-link"
                 target="_blank"
-                >LinkedIn</a
+                rel="noopener"
               >
-              |
+                <span class="contact-icon" aria-hidden="true">in</span>
+                LinkedIn
+              </a>
               <a
                 href="https://github.com/1reubent"
-                class="link-dark"
+                class="contact-link"
                 target="_blank"
-                >GitHub</a
+                rel="noopener"
               >
-              | Email:
-              <a href="mailto:1reubenthomas@gmail.com" class="link-secondary"
-                >1reubenthomas@gmail.com</a
-              >
-            </p>
+                <span class="contact-icon" aria-hidden="true">&lt;/&gt;</span>
+                GitHub
+              </a>
+              <a href="mailto:1reubenthomas@gmail.com" class="contact-link">
+                <span class="contact-icon" aria-hidden="true">@</span>
+                Email
+              </a>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Reuben Thomas</p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
