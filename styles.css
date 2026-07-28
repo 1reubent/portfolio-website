@@ -528,6 +528,23 @@ p {
   font-size: 0.85rem;
 }
 
+.footer-meta {
+  margin-top: 0.4rem;
+  font-size: 0.78rem;
+}
+
+.footer-meta a {
+  color: var(--text-faint);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.footer-meta a:hover {
+  color: var(--text-muted);
+  text-decoration-color: currentColor;
+}
+
 /* ---------- Reveal-on-scroll ---------- */
 .reveal {
   opacity: 0;
