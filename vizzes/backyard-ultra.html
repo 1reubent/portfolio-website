@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Makeover Monday case study: how depth, not the longest run, won the 2026 Backyard Ultra World Team Championship. Tableau visualization by Reuben Thomas."
+    />
+    <title>Backyard Ultra: Depth Won the Title — Reuben Thomas</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/favicon-192x192.png"
+    />
+    <link rel="shortcut icon" href="../assets/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/apple-touch-icon.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <script>
+      if (location.protocol !== "file:") {
+        var umamiScript = document.createElement("script");
+        umamiScript.defer = true;
+        umamiScript.src = "https://cloud.umami.is/script.js";
+        umamiScript.setAttribute(
+          "data-website-id",
+          "a3064de3-a1da-4b2d-b7d4-651b2c16b47c",
+        );
+        document.head.appendChild(umamiScript);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="bg-glow" aria-hidden="true">
+      <span class="glow glow-1"></span>
+      <span class="glow glow-2"></span>
+      <span class="glow glow-3"></span>
+    </div>
+
+    <header class="site-header">
+      <nav class="navbar" id="navbar">
+        <a href="../index.html#top" class="brand"
+          >RT<span class="brand-dot">.</span></a
+        >
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a class="nav-link" href="../index.html#about">About</a>
+          <a class="nav-link active" href="../index.html#projects">Projects</a>
+          <a class="nav-link" href="../index.html#skills">Skills</a>
+          <a class="nav-link" href="../index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===== Header ===== -->
+      <section class="case">
+        <div class="case-inner reveal">
+          <a class="back-link" href="../index.html#projects"
+            ><span aria-hidden="true">←</span> All projects</a
+          >
+          <p class="section-kicker">Single viz · Tableau</p>
+          <h1 class="case-title">
+            USA won the 2026 Backyard Ultra team title without the longest run
+          </h1>
+          <p class="case-lead">
+            This was a
+            <a
+              class="inline-link"
+              href="https://makeovermonday.vercel.app/dataset/big-s-backyard-ultramarathon-world-team-championships"
+              target="_blank"
+              rel="noopener"
+              >Makeover Monday challenge</a
+            >
+            that I submitted as an assignment for my Business Intelligence with
+            Visual Analytics class. In a Makeover Monday challenge, the goal is
+            to take a real-world dataset and redesign its visualization, or
+            build a new one, that tells a new story.
+          </p>
+          <p class="case-lead">
+            The data is from the 2026 Big's Backyard Ultra World Team
+            Championship. Each nation recruits 15 runners, and every hour each
+            runner has to finish a 4.167-mile loop, called a "yard," to stay in.
+            A team's score is the total number of yards all 15 runners complete.
+          </p>
+
+          <p class="case-lead">
+            The main story of my viz is that the USA won by keeping more of its
+            runners going for longer, over against plain 'star power'. This is
+            evidenced by the Belgium team, which finished 3rd even though its
+            last two runners reached a world-record 124 yards.
+          </p>
+          <div class="badge-row">
+            <span class="badge bg-tableau">Tableau</span>
+            <span class="badge bg-system">Table calculations</span>
+            <span class="badge bg-system">Data storytelling</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Final viz ===== -->
+      <section class="case-section case-section--flush">
+        <div class="case-wide reveal">
+          <div
+            class="viz-frame"
+            data-tableau-url="https://public.tableau.com/views/BackyardUltraDashboard/BackyardUltraDash"
+            data-tableau-width="1366"
+            data-tableau-height="768"
+          >
+            <img
+              src="../assets/vizzes/bbu-final.png"
+              width="1800"
+              height="957"
+              alt="Step chart of the percentage of each nation's 15 runners still going by yard. USA keeps more runners than Australia and Belgium from yard 74 through yard 95."
+            />
+          </div>
+          <p class="viz-caption">
+            <span
+              >Final visualization. Hover a line for each team's running
+              total.</span
+            >
+            <a
+              href="https://public.tableau.com/app/profile/reuben.thomas6482/viz/BackyardUltraDashboard/BackyardUltraDash"
+              target="_blank"
+              rel="noopener"
+              >Open in Tableau Public <span aria-hidden="true">→</span></a
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== Original ===== -->
+      <section class="case-section">
+        <div class="case-inner two-col reveal">
+          <div class="prose">
+            <p class="section-kicker">The original</p>
+            <h2>The original viz</h2>
+            <p>
+              The original Makeover Monday viz was the race's standings table,
+              which lists every runner's final yard count. It shows who won, but
+              not how or when the race was decided. I knew the same data could
+              tell a more interesting story in a more engaging way.
+            </p>
+          </div>
+          <div class="viz-frame viz-frame--dark">
+            <img
+              src="../assets/vizzes/bbu-original-table.png"
+              alt="The original standings table: rows of nations, each with 15 runner cells showing final yards."
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Iterations ===== -->
+      <section class="case-section">
+        <div class="case-wide reveal">
+          <p class="section-kicker">The process</p>
+          <h2>Three exploratory sheets, one final viz</h2>
+          <p class="section-intro">
+            Each exploratory sheet answered one question and led me to the next.
+            Click through to see how I got to the final viz.
+          </p>
+
+          <div data-stepper>
+            <div class="stepper" role="tablist" aria-label="Iterations">
+              <button
+                class="step-tab"
+                role="tab"
+                id="tab-1"
+                aria-controls="step-1"
+                aria-selected="true"
+              >
+                01 · Star vs. depth
+              </button>
+              <button
+                class="step-tab"
+                role="tab"
+                id="tab-2"
+                aria-controls="step-2"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                02 · Where teams split
+              </button>
+              <button
+                class="step-tab"
+                role="tab"
+                id="tab-3"
+                aria-controls="step-3"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                03 · Time of day
+              </button>
+              <button
+                class="step-tab"
+                role="tab"
+                id="tab-4"
+                aria-controls="step-4"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Final
+              </button>
+            </div>
+
+            <div
+              class="step-panel"
+              role="tabpanel"
+              id="step-1"
+              aria-labelledby="tab-1"
+            >
+              <div class="viz-frame">
+                <img
+                  src="../assets/vizzes/bbu-v1-star-vs-depth.png"
+                  alt="Two scatter plots of team yards against the farthest runner's yards and the 10th-best runner's yards, with the top 3 nations in orange."
+                />
+              </div>
+              <h3 class="step-title">
+                What predicts a team score better: the best runner or the
+                10th-best?
+              </h3>
+              <div class="qfd">
+                <div class="qfd-item">
+                  <h4>Question</h4>
+                  <p>
+                    Does a nation's team score track its best runner (star
+                    power) or its 10th-best runner (depth)?
+                  </p>
+                </div>
+                <div class="qfd-item">
+                  <h4>Finding</h4>
+                  <p>
+                    Both correlate strongly (R² = 0.93 for the best runner, 0.96
+                    for the 10th-best). The difference shows up among the
+                    contenders: the top three teams' best runners ranged from 87
+                    to 124 yards, yet the teams finished within 62 yards of each
+                    other. Belgium had the two longest runs and placed third.
+                  </p>
+                </div>
+                <div class="qfd-item">
+                  <h4>Next</h4>
+                  <p>
+                    A star runner can get a nation into contention, but can't
+                    win the title alone. That made me want to find where in the
+                    race the top nations built their lead.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="step-panel"
+              role="tabpanel"
+              id="step-2"
+              aria-labelledby="tab-2"
+              hidden
+            >
+              <div class="viz-frame">
+                <img
+                  src="../assets/vizzes/bbu-v2-runners-by-yard.png"
+                  alt="Line chart of remaining runners per nation by yard for the top 10 nations, above a stacked bar chart of dropouts per yard."
+                />
+              </div>
+              <h3 class="step-title">Remaining runners and dropouts by yard</h3>
+              <div class="qfd">
+                <div class="qfd-item">
+                  <h4>Question</h4>
+                  <p>Where in the race do the top teams start to separate?</p>
+                </div>
+                <div class="qfd-item">
+                  <h4>Finding</h4>
+                  <p>
+                    None of the top 10 nations lost a runner in the first 26
+                    yards. Teams thinned between yards 40 and 85, and that's
+                    where the USA pulled ahead: around yard 80 it still had 8
+                    runners while most contenders were down to 2–4. Runners left
+                    1–2 at a time, with no single collapse. Belgium's last two
+                    runners added 74 yards alone, which still wasn't enough.
+                  </p>
+                </div>
+                <div class="qfd-item">
+                  <h4>Next</h4>
+                  <p>
+                    The title was decided in the middle of the race by the
+                    middle runners. Before building on that, I wanted to see
+                    whether the time of day explained when runners dropped out.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="step-panel"
+              role="tabpanel"
+              id="step-3"
+              aria-labelledby="tab-3"
+              hidden
+            >
+              <div class="viz-frame">
+                <img
+                  src="../assets/vizzes/bbu-v3-dropouts-by-hour.png"
+                  alt="Stacked bar chart of dropouts by local hour of day, split by RTC, OVER and INC, peaking at 9 pm and staying high overnight."
+                />
+              </div>
+              <h3 class="step-title">Runners drop out most overnight</h3>
+              <div class="qfd">
+                <div class="qfd-item">
+                  <h4>Question</h4>
+                  <p>
+                    Do runners drop out at particular times of day, and do they
+                    choose to stop or get timed out?
+                  </p>
+                </div>
+                <div class="qfd-item">
+                  <h4>Finding</h4>
+                  <p>
+                    Dropouts concentrate overnight: about 47 per hour between 9
+                    pm and 5 am, compared with about 27 per hour from 7 am to 1
+                    pm, peaking at 9 pm. The split between quitting (RTC) and
+                    failing a lap (INC/OVER) barely changes between night and
+                    morning (59% vs. 52% failing a lap).
+                  </p>
+                </div>
+                <div class="qfd-item">
+                  <h4>Decision</h4>
+                  <p>
+                    This is a real pattern, but it's about individual runners,
+                    not what makes a team win. I left it out of the final viz
+                    and went back to the finding from Sheet 2.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="step-panel"
+              role="tabpanel"
+              id="step-4"
+              aria-labelledby="tab-4"
+              hidden
+            >
+              <div class="viz-frame">
+                <img
+                  src="../assets/vizzes/bbu-final.png"
+                  alt="Final step chart of the percentage of each nation's runners still going by yard."
+                />
+              </div>
+              <h3 class="step-title">From Sheet 2 to the final viz</h3>
+              <div class="qfd">
+                <div class="qfd-item">
+                  <h4>Kept</h4>
+                  <p>
+                    The main idea from Sheet 2: how many runners each nation
+                    still has at every yard.
+                  </p>
+                </div>
+                <div class="qfd-item">
+                  <h4>Changed</h4>
+                  <p>
+                    With 10 colors, Sheet 2 was hard to read. I colored only the
+                    USA (the winner), Australia (the team it had to pass) and
+                    Belgium (longest runs, but 3rd), kept the 4th and 5th place
+                    nations in gray, and gave the top 3 thicker lines. I also
+                    switched to % of the team still running.
+                  </p>
+                </div>
+                <div class="qfd-item">
+                  <h4>Added</h4>
+                  <p>
+                    A shaded band for yards 61–95, where the title was won, and
+                    notes at the key moments: yard 74, yard 80 and Belgium's
+                    124-yard finish. I chose this over a simple bar chart of
+                    final yards, which would show who won but not how.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Audience, question, takeaway ===== -->
+      <section class="case-section">
+        <div class="case-inner reveal">
+          <p class="section-kicker">Audience &amp; takeaway</p>
+          <h2>Who this is useful for</h2>
+          <div class="prose">
+            <p>
+              One meaningful use case for this insight is helping national team
+              selectors decide how to build their 15-runner rosters for the next
+              Big's Backyard Ultra World Team Championship. The main question
+              is:
+              <strong
+                >should selectors prioritize a few elite runners who can go the
+                farthest, or a deeper group of runners who can reliably last
+                into the middle of the race?</strong
+              >
+            </p>
+            <p>
+              The 2026 race points toward depth. How long the 8th–12th runners
+              can last matters as much as how far the best runner goes. Before
+              changing how they pick teams, though, selectors should check
+              whether the same pattern held in the 2020–2024 championships.
+            </p>
+            <p>
+              This is a single race, and each nation runs on its own home course
+              with different terrain, weather and time zone. Some of the
+              differences between teams could come from those conditions, so
+              this shows how the 2026 title was won, not that depth always wins.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Reuben Thomas</p>
+      <p class="footer-meta">
+        <a
+          href="https://github.com/1reubent/portfolio-website"
+          target="_blank"
+          rel="noopener"
+          >Site source on GitHub</a
+        >
+      </p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

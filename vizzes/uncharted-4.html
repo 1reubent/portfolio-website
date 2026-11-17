@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A four-chart Tableau dashboard on why Uncharted 4 stands out among Action-adventure games. Case study by Reuben Thomas."
+    />
+    <title>Uncharted 4 Dashboard — Reuben Thomas</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon-192x192.png" />
+    <link rel="shortcut icon" href="../assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <script>
+      if (location.protocol !== "file:") {
+        var umamiScript = document.createElement("script");
+        umamiScript.defer = true;
+        umamiScript.src = "https://cloud.umami.is/script.js";
+        umamiScript.setAttribute("data-website-id", "a3064de3-a1da-4b2d-b7d4-651b2c16b47c");
+        document.head.appendChild(umamiScript);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="bg-glow" aria-hidden="true">
+      <span class="glow glow-1"></span>
+      <span class="glow glow-2"></span>
+      <span class="glow glow-3"></span>
+    </div>
+
+    <header class="site-header">
+      <nav class="navbar" id="navbar">
+        <a href="../index.html#top" class="brand">RT<span class="brand-dot">.</span></a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a class="nav-link" href="../index.html#about">About</a>
+          <a class="nav-link active" href="../index.html#projects">Projects</a>
+          <a class="nav-link" href="../index.html#skills">Skills</a>
+          <a class="nav-link" href="../index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===== Header ===== -->
+      <section class="case">
+        <div class="case-inner reveal">
+          <a class="back-link" href="../index.html#projects"
+            ><span aria-hidden="true">←</span> All projects</a
+          >
+          <p class="section-kicker">Dashboard · Tableau</p>
+          <h1 class="case-title">
+            Why <em>Uncharted 4</em> stands out in Action-adventure
+          </h1>
+          <p class="case-lead">
+            I built this dashboard as an assignment for my Business Intelligence
+            with Visual Analytics class, using the
+            <a
+              class="inline-link"
+              href="https://gamesnightviz.webflow.io/blog/sep-2024-press-start"
+              target="_blank"
+              rel="noopener"
+              >Press Start Database</a
+            >. I chose to look at one of my favorite games,
+            <em>Uncharted 4</em>, to see how it compares with other
+            Action-adventure games and what makes it such a successful and
+            impressive game.
+          </p>
+          <div class="badge-row">
+            <span class="badge bg-tableau">Tableau</span>
+            <span class="badge bg-system">Dashboard design</span>
+            <span class="badge bg-system">Data storytelling</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Dashboard ===== -->
+      <section class="case-section case-section--flush">
+        <div class="case-wide reveal">
+          <div
+            class="viz-frame"
+            data-tableau-url="https://public.tableau.com/views/U4Dashboard/U4Dashboard"
+            data-tableau-width="1000"
+            data-tableau-height="800"
+          >
+            <img
+              src="../assets/vizzes/u4-dashboard.png"
+              width="2000"
+              height="1600"
+              alt="Four-chart dashboard highlighting Uncharted 4 in orange: a critic-vs-player score scatter, time-to-beat bars, Uncharted series scores, and Action-adventure releases per year."
+            />
+          </div>
+          <p class="viz-caption">
+            <span>Interactive dashboard. Hover any mark for details.</span>
+            <a
+              href="https://public.tableau.com/app/profile/reuben.thomas6482/viz/U4Dashboard/U4Dashboard"
+              target="_blank"
+              rel="noopener"
+              >Open in Tableau Public <span aria-hidden="true">→</span></a
+            >
+          </p>
+        </div>
+        <div class="case-inner case-summary reveal">
+          <div class="meta-grid">
+            <div class="meta-item">
+              <span class="meta-label">Format</span>
+              <p>4-chart dashboard with one highlight color</p>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Scope</span>
+              <p>Action-adventure games released 2000–2023</p>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Data</span>
+              <p>
+                Press Start Database: critic and user scores, completion times
+                and release years
+              </p>
+            </div>
+          </div>
+          <div class="prose">
+            <h2>What I found</h2>
+            <p>
+              <em>Uncharted 4</em> is near the top of the genre with both
+              critics and players, well above the genre average for each. It's
+              also a much bigger game than most in the genre, taking nearly
+              twice as long to beat. Within its own series, critics rank it
+              second behind <em>Uncharted 2</em>, and players rate the two
+              equally. It did all of this in 2016, which tied 2005 as the year
+              with the most Action-adventure releases.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Four charts ===== -->
+      <section class="case-section">
+        <div class="case-wide reveal">
+          <p class="section-kicker">The breakdown</p>
+          <h2>The four charts</h2>
+          <p class="section-intro">
+            Each chart makes one point about the game. Click through to see what
+            each one shows and why I built it that way.
+          </p>
+
+          <div data-stepper>
+            <div class="stepper" role="tablist" aria-label="Dashboard charts">
+              <button class="step-tab" role="tab" id="tab-1" aria-controls="step-1" aria-selected="true">01 · Quality</button>
+              <button class="step-tab" role="tab" id="tab-2" aria-controls="step-2" aria-selected="false" tabindex="-1">02 · Length</button>
+              <button class="step-tab" role="tab" id="tab-3" aria-controls="step-3" aria-selected="false" tabindex="-1">03 · Franchise</button>
+              <button class="step-tab" role="tab" id="tab-4" aria-controls="step-4" aria-selected="false" tabindex="-1">04 · Context</button>
+            </div>
+
+            <div class="step-panel" role="tabpanel" id="step-1" aria-labelledby="tab-1">
+              <div class="viz-frame">
+                <img src="../assets/vizzes/u4-1-scores.png" alt="Scatter of Metascore vs. user score for Action-adventure games with Uncharted 4 highlighted in the top-right quadrant." />
+              </div>
+              <h3 class="step-title">Critics and players agree that it's one of the genre's best</h3>
+              <div class="qfd">
+                <div class="qfd-item">
+                  <h4>Chart</h4>
+                  <p>A scatter plot of Metascore against user score, divided by the genre averages (68 for critics, 70.38 for players).</p>
+                </div>
+                <div class="qfd-item">
+                  <h4>Why this form</h4>
+                  <p>Every game has two scores, and a scatter plot shows both at the same time. The average lines split the plot into four labeled groups, so you can tell right away which group a game falls into.</p>
+                </div>
+                <div class="qfd-item">
+                  <h4>What to notice</h4>
+                  <p>The orange dot for <em>Uncharted 4</em> sits in the far top-right corner of the "Loved by both" group.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-panel" role="tabpanel" id="step-2" aria-labelledby="tab-2" hidden>
+              <div class="viz-frame">
+                <img src="../assets/vizzes/u4-2-time-to-beat.png" alt="Bar chart: Uncharted 4 takes 15.2, 18.2 and 31.9 hours vs. genre averages of 8.2, 10.5 and 17.2." />
+              </div>
+              <h3 class="step-title">It takes nearly twice as long to beat</h3>
+              <div class="qfd">
+                <div class="qfd-item">
+                  <h4>Chart</h4>
+                  <p>Bars comparing the genre average with <em>Uncharted 4</em> for three ways of playing: main story only, main story plus extras, and completionist.</p>
+                </div>
+                <div class="qfd-item">
+                  <h4>Why this form</h4>
+                  <p>Putting the bars side by side makes the size difference easy to see. I included all three playstyles so the comparison doesn't depend on one measure that happens to look good.</p>
+                </div>
+                <div class="qfd-item">
+                  <h4>What to notice</h4>
+                  <p>The gap is about the same in every category, roughly 1.7 to 1.9 times longer (for example, 15.2 vs. 8.2 hours for the main story).</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-panel" role="tabpanel" id="step-3" aria-labelledby="tab-3" hidden>
+              <div class="viz-frame">
+                <img src="../assets/vizzes/u4-3-series.png" alt="Line chart of critic and player scores for six Uncharted games; Uncharted 4 has critics 93 and players 88." />
+              </div>
+              <h3 class="step-title">It's 2nd in its series for critics and tied for 1st with players</h3>
+              <div class="qfd">
+                <div class="qfd-item">
+                  <h4>Chart</h4>
+                  <p>Critic and player scores for all six <em>Uncharted</em> games, in release order.</p>
+                </div>
+                <div class="qfd-item">
+                  <h4>Why this form</h4>
+                  <p>Putting the games in release order shows how the series rose and fell over time. Having two lines also shows that players consistently score the games a bit lower than critics do.</p>
+                </div>
+                <div class="qfd-item">
+                  <h4>What to notice</h4>
+                  <p>Critics gave it a 93, second only to <em>Uncharted 2</em> (96). Players gave it an 88, the same as <em>Uncharted 2</em>.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-panel" role="tabpanel" id="step-4" aria-labelledby="tab-4" hidden>
+              <div class="viz-frame">
+                <img src="../assets/vizzes/u4-4-releases.png" alt="Bar chart of Action-adventure releases per year with 2016 highlighted at 51 releases." />
+              </div>
+              <h3 class="step-title">It launched in the genre's busiest year</h3>
+              <div class="qfd">
+                <div class="qfd-item">
+                  <h4>Chart</h4>
+                  <p>The number of Action-adventure games released each year from 2000 to 2023, with 2016 in orange.</p>
+                </div>
+                <div class="qfd-item">
+                  <h4>Why this form</h4>
+                  <p>A simple bar chart over time. The other years stay gray so they give context without pulling attention away from 2016.</p>
+                </div>
+                <div class="qfd-item">
+                  <h4>What to notice</h4>
+                  <p>51 Action-adventure games came out in 2016, tied with 2005 for the most. <em>Uncharted 4</em> still stood out in that crowded year.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Audience & takeaway ===== -->
+      <section class="case-section">
+        <div class="case-inner prose reveal">
+          <p class="section-kicker">Audience &amp; takeaway</p>
+          <h2>Who this is useful for</h2>
+          <p>
+            One meaningful use case for this dashboard is helping a game studio
+            or publisher see what a standout Action-adventure game looks like.
+            The main question is:
+            <strong
+              >what does a game need to stand out in a crowded genre?</strong
+            >
+          </p>
+          <p>
+            <em>Uncharted 4</em> suggests a few answers. It scored well above
+            the genre average with both critics and players. Even within its own
+            series, where players score every game lower than critics do,
+            players still tied it for their favorite. It gave players about
+            twice as much content as a typical Action-adventure game. And it did
+            this in 2016, the genre's busiest year, so it couldn't rely on a
+            lack of competition.
+          </p>
+          <p>
+            However, this is only one game, so it doesn't prove that longer or
+            bigger games always do better. A good next step would be to check
+            whether the other games in the "Loved by both" corner share the same
+            traits, like longer playtimes or strong franchise history.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Reuben Thomas</p>
+      <p class="footer-meta">
+        <a
+          href="https://github.com/1reubent/portfolio-website"
+          target="_blank"
+          rel="noopener"
+          >Site source on GitHub</a
+        >
+      </p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
